@@ -84,8 +84,10 @@ async function playRaceEngine(character1, character2) {
             console.log(`${character1.NOME} venceu e marcou um ponto!`);
             character1.PONTOS++;
         } else if (totaltestSkill1 < totaltestSkill2) {
-            console.log(`${character2} venceu e marcou um ponto!`);
+            console.log(`${character2.NOME} venceu e marcou um ponto!`);
             character2.PONTOS++;
+        } else{
+            console.log("Tivemos um empate")
         }
 
         console.log('---------------------------------------')
